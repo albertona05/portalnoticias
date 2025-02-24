@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Futuristas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #005f73;
+            padding: 20px 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .navbar-brand {
+            color: #ffffff;
+            font-size: 1.7rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .navbar .form-control,
+        .navbar .form-select {
+            border-radius: 30px;
+            padding: 8px 20px;
+            border: 1px solid #ddd;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .navbar .form-control:focus,
+        .navbar .form-select:focus {
+            border-color: #ffbf00;
+            box-shadow: 0 0 8px rgba(255, 191, 0, 0.5);
+        }
+
+        .carousel-item {
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .carousel-caption {
+            bottom: 30px;
+            text-align: left;
+        }
+
+        .carousel-caption h5 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(100%);
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 570px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-img-top {
+            min-height: 250px;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #005f73;
+            margin-bottom: 15px;
+        }
+
+        .card-text {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-leer-mas {
+            background-color: #ffbf00;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 10px 30px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-leer-mas:hover {
+            background-color: #ff9f00;
+            transform: scale(1.05);
+        }
+
+        .title-c {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #005f73;
+            color: #bbb;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #ffbf00;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 20px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 60px 0;
+            color: #005f73;
+            letter-spacing: 1px;
+        }
+
+        .card-columns {
+            column-count: 3;
+            column-gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .card-columns {
+                column-count: 1;
+            }
+            .carousel-item img {
+                max-height: 300px;
+            }
+            .carousel-caption h5 {
+                font-size: 1.5rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+                margin: 40px 0;
+            }
+            .navbar {
+                padding: 15px 20px;
+            }
+            .navbar .form-control,
+            .navbar .form-select {
+                font-size: 0.9rem;
+                padding: 5px 10px;
+            }
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+
+        .section {
+            padding: 60px 0;
+            background-color: #ffffff;
+            margin-bottom: 50px;
+            border-radius: 15px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .section:not(:last-child) {
+            border-bottom: 3px solid #e0e0e0;
+        }
+
+        .section h2 {
+            font-size: 2.8rem;
+            color: #004d40;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background-color: #ffbf00;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+
+        .section h2:hover {
+            color: #ff9f00;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .categoria-seleccionada {
+            font-weight: bold;
+            color: #ffbf00;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#" id="navbar-inicio">Noticias Futuristas</a>
+            <input class="form-control me-2" type="search" id="buscar" placeholder="Buscar noticias...">
+            <select id="filtro-categoria" class="form-select w-auto">
+                <option value="">Todas las categorías</option>
+                <option value="tecnologia">Tecnología</option>
+                <option value="deportes">Deportes</option>
+                <option value="politica">Política</option>
+                <option value="cultura">Cultura</option>
+            </select>
+            <button id="borrar-busqueda" class="btn btn-outline-light ms-2" style="display:none;">Borrar búsqueda</button>
+        </div>
+    </nav>
+
+    <div id="carouselNoticias" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carousel-inner"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2 class="section-title" id="titulo-seccion">Últimas Noticias</h2>
+            <div class="row" id="noticias-container"></div>
+        </div>
+
+        <div class="section" id="categorias-seccion">
+            <h2 class="section-title mt-4">Categorías</h2>
+            <div id="categorias-container"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Noticias Futuristas. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Términos de Uso</a> |
+            <a href="#">Política de Privacidad</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <script>
+        let noticiasGlobales = [];
+
+        $(document).ready(function () {
+            $.getJSON('noticias.json', function (data) {
+                noticiasGlobales = data.noticias;
+                mostrarNoticias(noticiasGlobales);
+                mostrarDestacadas(noticiasGlobales);
+                mostrarPorCategoria(noticiasGlobales);
+            });
+
+            function mostrarNoticias(noticias) {
+                let contenedor = $('#noticias-container');
+                contenedor.empty();
+                noticias.forEach(noticia => {
+                    let card = `<div class="col-md-4 mb-4">
+                                    <div class="card">
+                                        <img src="${noticia.image}" class="card-img-top" alt="${noticia.titulo}">
+                                        <div class="card-body">
+                                            <h5 class="card-title">${noticia.titulo}</h5>
+                                            <p class="card-text">${noticia.resumen}</p>
+                                            <button class="btn btn-leer-mas" onclick="window.location.href='noticia.html?id=${noticia.id}'">Leer más</button>
+                                        </div>
+                                    </div>
+                                </div>`;
+                    contenedor.append(card);
+                });
+            }
+
+            function mostrarDestacadas(noticias) {
+                let carousel = $('#carousel-inner');
+                carousel.empty();
+                noticias.slice(0, 3).forEach((noticia, index) => {
+                    let activeClass = index === 0 ? 'active' : '';
+                    let item = `<div class="carousel-item ${activeClass}">
+                                    <img src="${noticia.image}" class="d-block w-100" alt="${noticia.titulo}">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>${noticia.titulo}</h5>
+                                        <button class="btn-leer-mas" onclick="window.location.href='noticia.html?id=${noticia.id}'">Leer más</button>
+                                    </div>
+                                </div>`;
+                    carousel.append(item);
+                });
+            }
+
+            function mostrarPorCategoria(noticias) {
+                let categorias = ['tecnologia', 'deportes', 'politica', 'cultura'];
+                let contenedor = $('#categorias-container');
+                contenedor.empty();
+
+                categorias.forEach(cat => {
+                    let filtradas = noticias.filter(n => n.categoria === cat).slice(0, 3);
+                    if (filtradas.length > 0) {
+                        let section = `<h3 class="text-left pt-5 ps-2 pb-2 title-c ${cat === $('#filtro-categoria').val() ? 'categoria-seleccionada' : ''}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</h3>
+                                       <div class="row">${filtradas.map(noticia => ` 
+                                       <div class="col-md-4">
+                                           <div class="card">
+                                               <img src="${noticia.image}" class="card-img-top" alt="${noticia.titulo}">
+                                               <div class="card-body">
+                                                   <h5 class="card-title">${noticia.titulo}</h5>
+                                                   <p class="card-text">${noticia.resumen}</p>
+                                                   <button class="btn btn-leer-mas" onclick="window.location.href='noticia.html?id=${noticia.id}'">Leer más</button>
+                                               </div>
+                                           </div>
+                                       </div>`).join('')}
+                                       </div>`;
+                        contenedor.append(section);
+                    }
+                });
+            }
+
+            $('#filtro-categoria').change(function () {
+                let categoria = $(this).val();
+                $('#borrar-busqueda').show();
+                if (categoria === '') {
+                    mostrarNoticias(noticiasGlobales);
+                } else {
+                    let noticiasFiltradas = noticiasGlobales.filter(n => n.categoria === categoria);
+                    mostrarNoticias(noticiasFiltradas);
+                }
+            });
+
+            $('#buscar').on('input', function () {
+                let busqueda = $(this).val().toLowerCase();
+                let noticiasFiltradas = noticiasGlobales.filter(n => n.titulo.toLowerCase().includes(busqueda) || n.resumen.toLowerCase().includes(busqueda));
+                mostrarNoticias(noticiasFiltradas);
+            });
+
+            $('#borrar-busqueda').click(function () {
+                $('#buscar').val('');
+                $('#borrar-busqueda').hide();
+                mostrarNoticias(noticiasGlobales);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

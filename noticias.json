@@ -1,0 +1,135 @@
+{
+    "noticias": [
+      {
+        "id": 1,
+        "titulo": "La inteligencia artificial revoluciona la medicina",
+        "categoria": "tecnologia",
+        "resumen": "Investigadores han desarrollado un nuevo modelo de IA capaz de diagnosticar enfermedades con precisión.",
+        "contenido": "La inteligencia artificial está transformando el sector de la salud. Los modelos de IA pueden analizar datos médicos de forma más rápida y precisa que los humanos. Investigaciones recientes han demostrado que estos modelos tienen una tasa de precisión superior al 90%. Los avances en este campo permiten diagnósticos tempranos de enfermedades graves. Sin duda, la IA se está convirtiendo en una herramienta indispensable en la medicina moderna.",
+        "image": "https://okdiario.com/img/2024/02/01/la-inteligencia-artificial-revoluciona-la-medicina_-diagnosticos-mas-precisos-1.jpg",
+        "autor": "Ana López",
+        "fecha": "2025-02-12"
+      },
+      {
+        "id": 2,
+        "titulo": "El Real Madrid gana la Champions League 2025",
+        "categoria": "deportes",
+        "resumen": "El equipo blanco consigue su 15º título con una victoria épica.",
+        "contenido": "El Real Madrid ha conquistado la Champions League de 2025 tras una victoria impresionante en la final. En un partido lleno de emociones, el equipo se impuso por 3-1 al Liverpool. El capitán, Sergio Ramos, anotó el gol decisivo en los últimos minutos. La victoria se celebra como una de las más memorables en la historia del club. Los fanáticos del Real Madrid celebran su 15º trofeo de la UEFA Champions League.",
+        "image": "https://static.euronews.com/articles/stories/08/47/37/12/1200x675_cmsv2_98fee8bb-74d0-58c9-b2b9-78234c6b5ae2-8473712.jpg",
+        "autor": "Carlos Pérez",
+        "fecha": "2025-06-10"
+      },
+      {
+        "id": 3,
+        "titulo": "Elecciones 2025: Los candidatos presentan sus propuestas",
+        "categoria": "politica",
+        "resumen": "Los principales candidatos han iniciado sus campañas con nuevas propuestas económicas.",
+        "contenido": "Las elecciones presidenciales de 2025 están a la vuelta de la esquina, y los principales candidatos han comenzado a presentar sus propuestas. En temas económicos, prometen reformas fiscales y una nueva ley de impuestos. También han hablado sobre la reforma del sistema de salud y la creación de nuevos empleos. Los debates entre candidatos se esperan intensos, ya que la economía será uno de los temas más importantes. Los votantes estarán atentos a las promesas electorales de los contendientes.",
+        "image": "https://ethic.es/wp-content/uploads/2024/01/elecciones-1.png",
+        "autor": "María Gómez",
+        "fecha": "2025-04-01"
+      },
+      {
+        "id": 4,
+        "titulo": "El avance de las energías renovables en el mundo",
+        "categoria": "tecnologia",
+        "resumen": "Los avances en energías limpias podrían transformar el panorama energético global.",
+        "contenido": "El mundo está viendo un cambio significativo hacia las energías renovables. Países como Dinamarca y Alemania están liderando la transición a fuentes de energía limpia. Las tecnologías solares y eólicas han mejorado enormemente en eficiencia y coste. Estos avances permiten que más naciones inviertan en infraestructuras sostenibles. Este cambio es clave para reducir las emisiones de carbono y luchar contra el cambio climático.",
+        "image": "https://live.mrf.io/statics/i/ps/www.muycomputer.com/wp-content/uploads/2017/06/energiasrenovables0.jpg?width=1200&enable=upscale",
+        "autor": "Luis Sánchez",
+        "fecha": "2025-03-20"
+      },
+      {
+        "id": 5,
+        "titulo": "Messi rompe récords en su última temporada",
+        "categoria": "deportes",
+        "resumen": "El astro argentino logra un hito histórico en su última temporada con el Barcelona.",
+        "contenido": "Lionel Messi ha roto varios récords en su última temporada como jugador del Barcelona. El argentino superó los 800 goles a nivel profesional y se convirtió en el máximo goleador de la historia de La Liga. A pesar de las tensiones dentro del club, Messi sigue demostrando su calidad sobre el campo. Esta temporada será recordada como una de las más brillantes de la historia del fútbol. Muchos esperan que Messi continúe haciendo historia en el fútbol mundial.",
+        "image": "https://www.elfutbolero.com.ar/_next/image?url=https%3A%2F%2Fwww.elfutbolero.com.ar%2Fimage%2Felfutbolerocomar%2Flionel-messi-1726366051-hq.webp&w=3840&q=75",
+        "autor": "Juan Rodríguez",
+        "fecha": "2025-05-15"
+      },
+      {
+        "id": 6,
+        "titulo": "El impacto del cambio climático en la agricultura mundial",
+        "categoria": "politica",
+        "resumen": "El cambio climático está afectando las cosechas y alterando los ecosistemas agrícolas.",
+        "contenido": "Los efectos del cambio climático ya están siendo evidentes en la agricultura global. Las sequías prolongadas y las temperaturas extremas están reduciendo la producción de alimentos en varias regiones. Los cultivos como el maíz, el trigo y el arroz se ven especialmente afectados. Las naciones deben adaptarse a estos cambios para evitar una crisis alimentaria. Los expertos sugieren invertir en tecnologías agrícolas resistentes al clima para mitigar estos efectos.",
+        "image": "https://institutodelagua.es/wp-content/uploads/2024/02/cambio-climatico-en-la-agricultura-consecuencias-y-soluciones-para-un-futuro-sostenible.jpg",
+        "autor": "José Martínez",
+        "fecha": "2025-03-10"
+      },
+      {
+        "id": 7,
+        "titulo": "Nuevas tecnologías en el transporte urbano",
+        "categoria": "tecnologia",
+        "resumen": "Las ciudades están adoptando tecnologías innovadoras para mejorar el transporte público.",
+        "contenido": "El transporte urbano está cambiando rápidamente gracias a la innovación tecnológica. Ciudades como Tokio y Nueva York están implementando sistemas de transporte autónomos. Estos avances prometen mejorar la eficiencia y reducir el tráfico en las principales ciudades. Además, las bicicletas eléctricas y los vehículos compartidos están ganando popularidad. Estas nuevas tecnologías están cambiando la forma en que nos desplazamos por la ciudad.",
+        "image": "https://es.digi.com/getattachment/Blog/post/New-Public-Transit-Technology-How-Emerging-Tech-Is/GettyImages-910736320-1280x720.jpg?lang=en-US",
+        "autor": "Carlos Fernández",
+        "fecha": "2025-04-05"
+      },
+      {
+        "id": 8,
+        "titulo": "El futuro de la inteligencia artificial en el trabajo",
+        "categoria": "tecnologia",
+        "resumen": "La automatización y la IA cambiarán drásticamente el mercado laboral en los próximos años.",
+        "contenido": "La inteligencia artificial está remodelando el mercado laboral global. Las tareas repetitivas y manuales están siendo reemplazadas por máquinas y algoritmos. Este cambio puede generar nuevas oportunidades laborales en el campo tecnológico. Sin embargo, también se espera que muchos trabajadores se enfrenten a la automatización de sus empleos. Es crucial que las políticas públicas apoyen la capacitación en nuevas habilidades para enfrentar este desafío.",
+        "image": "https://es.digi.com/getattachment/Blog/post/New-Public-Transit-Technology-How-Emerging-Tech-Is/GettyImages-910736320-1280x720.jpg?lang=en-US",
+        "autor": "Lucía Torres",
+        "fecha": "2025-02-25"
+      },
+      {
+        "id": 9,
+        "titulo": "Revolución en el mundo del cine con el 3D y la realidad virtual",
+        "categoria": "cultura",
+        "resumen": "El cine está adoptando tecnologías de realidad virtual para crear experiencias más inmersivas.",
+        "contenido": "El cine está cambiando rápidamente con el uso de tecnologías avanzadas como el 3D y la realidad virtual. Los estudios de cine están invirtiendo en experiencias inmersivas para atraer a una nueva generación de espectadores. Las películas en 3D y la realidad aumentada ofrecen una experiencia visual más rica y dinámica. Las tecnologías VR también están abriendo nuevas puertas para los creadores de contenido. Este cambio podría transformar la industria cinematográfica en los próximos años.",
+        "image": "https://imagenes.elpais.com/resizer/v2/EQLDTXQPFIT625JQHKXECHD2EE.jpg?auth=337fc14de6ae987b83de2fa690bdbeba2fdb078088fb6724aa60d74ab769a94a&width=1960&height=1103&smart=true",
+        "autor": "Ana Martínez",
+        "fecha": "2025-01-15"
+      },
+      {
+        "id": 10,
+        "titulo": "Cómo el arte digital está revolucionando el mercado del arte",
+        "categoria": "cultura",
+        "resumen": "Las obras de arte digital están ganando popularidad y atrayendo a coleccionistas de todo el mundo.",
+        "contenido": "El arte digital está alcanzando nuevas alturas, convirtiéndose en una forma legítima de coleccionismo. Los NFT (tokens no fungibles) permiten a los artistas vender sus obras digitales como piezas únicas. Los coleccionistas ahora pueden poseer arte digital y revenderlo en plataformas especializadas. Este nuevo modelo de mercado está cambiando la forma en que se percibe el arte. Muchos artistas jóvenes están aprovechando esta tendencia para monetizar sus obras de una manera innovadora.",
+        "image": "https://extepatrail.es/wp-content/uploads/2024/02/compressed_img-i7aH56SB6EQhmGh7HNjJn8hE.png",
+        "autor": "Roberto López",
+        "fecha": "2025-05-20"
+      },
+      {
+        "id": 11,
+        "titulo": "Exploración espacial: La nueva carrera hacia Marte",
+        "categoria": "tecnologia",
+        "resumen": "Las agencias espaciales están trabajando juntas para lograr un viaje tripulado a Marte en 2030.",
+        "contenido": "La exploración espacial está avanzando a pasos agigantados, con el objetivo de llegar a Marte en la próxima década. Agencias como la NASA y SpaceX están liderando la carrera hacia el planeta rojo. Los primeros vuelos tripulados están previstos para el año 2030, y se están desarrollando nuevos cohetes y tecnologías de soporte vital. Marte podría convertirse en la próxima frontera de la humanidad. La misión representa uno de los mayores desafíos tecnológicos de la historia.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8-OLx8b1uNS8LsS1oKIoU7ofF0pXBNQhGrA&s",
+        "autor": "Miguel García",
+        "fecha": "2025-06-01"
+      },
+      {
+        "id": 12,
+        "titulo": "La pandemia y su impacto en la educación global",
+        "categoria": "politica",
+        "resumen": "La educación a distancia ha acelerado la transformación digital en las escuelas de todo el mundo.",
+        "contenido": "La pandemia de COVID-19 ha provocado una transformación en la educación. Las escuelas y universidades han adoptado plataformas digitales para continuar con las clases a distancia. Este cambio ha acelerado la adopción de tecnologías como las videoconferencias y las herramientas de colaboración online. A pesar de los desafíos, la educación a distancia ha abierto nuevas oportunidades para estudiantes de todo el mundo. El futuro de la educación parece ser más digital y accesible.",
+        "image": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production+Library/03-08-2020-UNICEF-Guatemala.jpg/image1170x530cropped.jpg",
+        "autor": "Elena Ruiz",
+        "fecha": "2025-02-18"
+      },
+      {
+        "id": 13,
+        "titulo": "La evolución de la moda sostenible",
+        "categoria": "cultura",
+        "resumen": "La industria de la moda está adoptando prácticas más sostenibles para reducir su impacto ambiental.",
+        "contenido": "La moda sostenible está tomando fuerza a medida que los consumidores se vuelven más conscientes del impacto ambiental de sus compras. Marcas de todo el mundo están adoptando prácticas más responsables, como el uso de materiales reciclados y la reducción de residuos. La moda rápida está perdiendo terreno frente a nuevas tendencias que promueven la durabilidad y la ética. La industria está evolucionando hacia un futuro más verde y responsable. El cambio está impulsado por la demanda de los consumidores de productos más responsables.",
+        "image": "https://www.bbva.com/wp-content/uploads/2021/04/moda_sostenible_sostenibilidad_BBVA.jpg",
+        "autor": "Patricia Morales",
+        "fecha": "2025-06-12"
+      }
+    ]
+  }
+  
