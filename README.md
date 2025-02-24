@@ -1,1 +1,1 @@
-# Porta de noticias(Usabilidad y Accesibilidad)
+# Portal de noticias(Usabilidad y Accesibilidad)
